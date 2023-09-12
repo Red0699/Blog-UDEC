@@ -1,0 +1,40 @@
+[
+    { 
+        "titulo": "Noticia 1", 
+        "contenido": "Breve descripción de la Noticia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elitasasasas.", 
+        "imagen": "home-bg.jpg", 
+        "link": "#"
+    },
+    
+    { 
+        "titulo": "Noticia 2", 
+        "contenido": "Breve descripción de la Noticia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elitasasasas.", 
+        "imagen": "about-bg.jpg", 
+        "link": "#"
+    },
+    { 
+        "titulo": "Noticia 3", 
+        "contenido": "Breve descripción de la Noticia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elitasasasas.", 
+        "imagen": "contact-bg.jpg", 
+        "link": "#"
+    },
+    { 
+        "titulo": "Noticia 4", 
+        "contenido": "Breve descripción de la Noticia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elitasasasas.", 
+        "imagen": "post-bg.jpg", 
+        "link": "#"
+    },
+    { 
+        "titulo": "Noticia 5", 
+        "contenido": "Breve descripción de la Noticia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elitasasasas.", 
+        "imagen": "post-sample-image.jpg", 
+        "link": "#"
+    },
+    { 
+        "titulo": "Noticia 6", 
+        "contenido": "Breve descripción de la Noticia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elitasasasas.", 
+        "imagen": "about-bg.jpg", 
+        "link": "#"
+    }
+
+]
