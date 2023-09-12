@@ -1,5 +1,5 @@
 
-// Datos de noticias (ejemplo)
+// Datos de noticias
 const noticias = [
     { 
         titulo: 'Noticia 1', 

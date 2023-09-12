@@ -341,7 +341,7 @@
         loop: false,
         beforePageClick: null,
         onPageClick: null,
-        paginationClass: 'pagination justify-content-center',
+        paginationClass: 'pagination',
         nextClass: 'page-item next',
         prevClass: 'page-item prev',
         lastClass: 'page-item last',
