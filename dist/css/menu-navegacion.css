@@ -1,0 +1,75 @@
+.menu {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgba(152, 14, 194, 0.746);
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+}
+
+.menu-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: relative; 
+}
+
+.menu-option:hover {
+    transform: scale(1.1);
+}
+
+.menu-text {
+    font-size: 13px;
+    opacity: 0; 
+    transition: opacity 0.5s;
+    position: absolute; 
+    top: 0; 
+}
+
+.musica{
+    left: -120px;
+}
+
+.contraste{
+    left: -140px;
+}
+
+.menu-option:hover .menu-text {
+    opacity: 1; 
+}
+
+
+.menu-option:hover + .menu-text {
+    display: inline-block; 
+    opacity: 1;
+}
+
+/* Iconos de slash inicialmente no se mostrará */
+#music-icon.fa-music-slash {
+    display: none;
+}
+
+#contrast-icon.fa-adjust-slash {
+    display: none;
+}
+
+/* Cambiar icono cuando este activo la opción */
+.menu-option.active #music-icon.fa-music-slash,
+.menu-option.active #contrast-icon.fa-adjust-slash {
+    display: inline-block; 
+}
+
+.menu-option.active .musica{
+    left: -140px;
+}
+
+.menu-option.active .contraste{
+    left: -160px;
+}

@@ -73,10 +73,10 @@ noticias.forEach(noticia => {
 
 $(document).ready(function() {
     $('#pagination').twbsPagination({
-        totalPages: Math.ceil(noticias.length / 6), // Cambia "3" por el número de tarjetas por página
+        totalPages: Math.ceil(noticias.length / 6), 
         visiblePages: 5, // Número de páginas visibles en el paginador
         onPageClick: function(event, page) {
-            const noticiasPerPage = 6; // Cambia "3" por el número de tarjetas por página
+            const noticiasPerPage = 6; 
             const startIndex = (page - 1) * noticiasPerPage;
             const endIndex = startIndex + noticiasPerPage;
             const tarjetas = noticias.slice(startIndex, endIndex);
