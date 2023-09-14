@@ -1,17 +1,41 @@
+// Variables para controlar el estado de las opciones
+
+// Verificar si hay un valor almacenado para musicEnabled en localStorage
+let musicEnabled = localStorage.getItem('musicEnabled') === 'false';
+let contrastEnabled = false;
+
 document.addEventListener('DOMContentLoaded', function () {
     const musicOption = document.getElementById('music-option');
     const contrastOption = document.getElementById('contrast-option');
+    const musicPlayer = document.getElementById('music-player');
+    const audioPlayer = document.getElementById('audio-player');
 
-    // Variables para controlar el estado de las opciones
-    let musicEnabled = true;
-    let contrastEnabled = false;
+    // Función para actualizar el estado de musicEnabled en localStorage
+    function updateMusicEnabledState(enabled) {
+        localStorage.setItem('musicEnabled', enabled.toString());
+    }
 
     /* -------------------Eventos para las opciones-------------------------- */
 
+    console.log(musicEnabled)
     //Música
     musicOption.addEventListener('click', function () {
         musicEnabled = !musicEnabled;
         updateOptionState(musicOption, musicEnabled, 'Música');
+        updateMusicEnabledState(musicEnabled); // Guardar el estado en localStorage
+
+        if (musicEnabled) {
+            musicPlayer.style.display = 'flex'; // Mostrar el reproductor de música
+            audioPlayer.play();
+            console.log('deberia mostrarse')
+            
+        } else {
+            musicPlayer.style.display = 'none'; // Ocultar el reproductor de música
+            audioPlayer.pause();
+            audioPlayer.currentTime = 0;
+            console.log('deberia ocultarse')
+        }
+
     });
 
     // Contraste
