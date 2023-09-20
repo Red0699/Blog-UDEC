@@ -1,13 +1,53 @@
+/* Alinea el reproductor de música en la parte inferior de la pantalla y fíjalo */
 .music-player {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #0665a2;
     color: white;
     padding: 10px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Agrega estilos adicionales para los elementos del reproductor */
+/* Alinea los botones de control en el centro verticalmente */
+.music-player .controls {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para los botones de control */
+.music-player .controls button {
+    margin: 0 10px; /* Espacio entre los botones */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin bordes */
+    color: white; /* Color del icono */
+    font-size: 20px; /* Tamaño del icono */
+    cursor: pointer;
+}
+
+/* Cambia el color del botón de reproducción/pausa cuando se activa */
+.music-player .controls button.playing {
+    color: #ff5733; /* Color de resaltado cuando se reproduce */
+}
+
+/* Estilos para la información de la canción */
+.music-player .song-info {
+    flex-grow: 1; /* La información de la canción ocupará todo el espacio disponible */
+    text-align: center; /* Centra el texto */
+}
+
+/* Ajusta el estilo del reproductor de música en dispositivos móviles */
+@media (max-width: 768px) {
+    .music-player {
+        padding: 5px; /* Reduce el espacio entre el borde y el contenido */
+    }
+    .music-player .controls button {
+        font-size: 16px; /* Tamaño de fuente ligeramente más pequeño en dispositivos móviles */
+    }
+    .music-player .song-info {
+        font-size: 12px; /* Tamaño de fuente más pequeño para la información de la canción en dispositivos móviles */
+    }
+}

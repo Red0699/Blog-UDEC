@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
     playPauseButton.addEventListener('click', function () {
         if (audioPlayer.paused || audioPlayer.ended) {
             audioPlayer.play();
-            playPauseButton.textContent = 'Pausa';
+            playPauseButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
         } else {
             audioPlayer.pause();
-            playPauseButton.textContent = 'Reproducir';
+            playPauseButton.innerHTML = '<i class="fa-solid fa-play"></i>';
         }
     });
 

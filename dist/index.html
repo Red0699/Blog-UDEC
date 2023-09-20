@@ -9,7 +9,7 @@
     <title>Clean Blog - Start Bootstrap Theme</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="../vendor/fontawesome-free-6.4.2-web/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
         type="text/css" />
@@ -168,14 +168,14 @@
             <h4 class="song-title">Nombre de la canción</h4>
             <p class="artist" style="font-size: 12px;">Artista</p>
         </div>
-        <audio id="audio-player" controls >
+        <audio id="audio-player" controls preload="auto" loop="false">
             <source type="audio/mpeg">
             Tu navegador no soporta el elemento de audio.
         </audio>
         <div class="controls">
-            <button id="prev-button">Anterior</button>
-            <button id="play-pause-button">Reproducir</button>
-            <button id="next-button">Siguiente</button>
+            <button class="btn btn-primary rounded-circle btn-sm" id="prev-button"><i class="fa-solid fa-backward"></i></button>
+            <button class="btn btn-primary rounded-circle btn-sm" id="play-pause-button"><i class="fa-solid fa-pause"></i></button>
+            <button class="btn btn-primary rounded-circle btn-sm" id="next-button"><i class="fa-solid fa-forward"></i></button>
         </div>
     </div>
     

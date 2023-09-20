@@ -1,7 +1,8 @@
 // Variables para controlar el estado de las opciones
 
 // Verificar si hay un valor almacenado para musicEnabled en localStorage
-let musicEnabled = localStorage.getItem('musicEnabled') === 'false';
+let musicEnabled = localStorage.getItem('musicEnabled') === 'true';
+
 let contrastEnabled = false;
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -12,8 +13,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Función para actualizar el estado de musicEnabled en localStorage
     function updateMusicEnabledState(enabled) {
-        localStorage.setItem('musicEnabled', enabled.toString());
+        localStorage.setItem('musicEnabled', enabled ? 'true' : 'false');
     }
+
+    // Función para mostrar u ocultar el reproductor de música
+    function toggleMusicPlayer(enabled) {
+        if (enabled) {
+            musicPlayer.style.display = 'flex'; // Mostrar el reproductor de música
+            audioPlayer.play();
+        } else {
+            musicPlayer.style.display = 'none'; // Ocultar el reproductor de música
+            audioPlayer.pause();
+            audioPlayer.currentTime = 0;
+        }
+    }
+
+    // Actualizar el estado de la opción de música al cargar la página
+    updateOptionState(musicOption, musicEnabled, 'Música');
+    toggleMusicPlayer(musicEnabled);
+    
 
     /* -------------------Eventos para las opciones-------------------------- */
 
@@ -23,18 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         musicEnabled = !musicEnabled;
         updateOptionState(musicOption, musicEnabled, 'Música');
         updateMusicEnabledState(musicEnabled); // Guardar el estado en localStorage
-
-        if (musicEnabled) {
-            musicPlayer.style.display = 'flex'; // Mostrar el reproductor de música
-            audioPlayer.play();
-            console.log('deberia mostrarse')
-            
-        } else {
-            musicPlayer.style.display = 'none'; // Ocultar el reproductor de música
-            audioPlayer.pause();
-            audioPlayer.currentTime = 0;
-            console.log('deberia ocultarse')
-        }
+        toggleMusicPlayer(musicEnabled);
 
     });
 
