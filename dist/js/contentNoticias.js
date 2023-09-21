@@ -5,7 +5,7 @@ const noticias = [
         titulo: 'Noticia 1', 
         contenido: 'Breve descripción de la Noticia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elitasasasas.', 
         imagen: 'home-bg.jpg', 
-        link: '#'
+        link: './noticias/noticias1.html'
     },
     
     { 

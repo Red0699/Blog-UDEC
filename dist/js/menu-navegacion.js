@@ -1,7 +1,7 @@
 // Variables para controlar el estado de las opciones
 
 // Verificar si hay un valor almacenado para musicEnabled en localStorage
-let musicEnabled = localStorage.getItem('musicEnabled') === 'true';
+let musicEnabled = localStorage.getItem('musicEnabled') === 'false';
 
 let contrastEnabled = false;
 
