@@ -1,0 +1,25 @@
+
+
+/* Estilo para dispositivos móviles del paginador */
+@media (max-width: 767px) {
+    #pagination {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+        /* Envuelve los elementos en múltiples líneas */
+    }
+
+    .page-item {
+        margin: 2px;
+        /* Espacio entre los elementos */
+    }
+}
+
+.pagination {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
