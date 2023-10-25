@@ -9,7 +9,7 @@
     <title>Blog de la Cundi</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="../vendor/fontawesome-free-6.4.2-web/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
         type="text/css" />
@@ -17,105 +17,79 @@
         href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
         rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-
-    <!-- Agregar ID de Facebook como Moderador -->
-    <meta property="fb:admins" content="100001641055935" />
+    <link href="../css/styles.css" rel="stylesheet" />
 
 </head>
 
 <body>
 
     <!-- Navegación-->
-    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light position-relative" id="mainNav" style="background-color: #007b3e;">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="https://www.udec.edu.co/">
-                <img src="./assets/img/LogoBlanco.png" alt="Logo UDEC" width="130" height="60">
+                <img src="../assets/img/LogoBlanco.png" alt="Logo UDEC" width="130" height="60">
             </a>
             <!-- Botón de despliegue para el responsive -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
                 Menu
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars text-white"></i>
             </button>
             <!-- Items de navegación-->
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="noticias.html">Noticias</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#">Investigaciones</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white"
+                            href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white"
+                            href="../noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white"
+                            href="../investigaciones.html">Investigaciones</a>
+                    </li>
 
-                    <!-- Menú desplegable "Participa" -->
+                    <!-- Item menú desplegable "Participa" -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle px-lg-3 py-3 py-lg-4" href="#" id="participarDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle px-lg-3 py-3 py-lg-4 text-white" href="#"
+                            id="participarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             Participa
                         </a>
                         <div class="dropdown-menu" aria-labelledby="participarDropdown">
-                            <a class="dropdown-item" href="comentarios.html">Comentarios</a>
-                            <a class="dropdown-item" href="opiniones.html">Dános tu opinión</a>
-                            <a class="dropdown-item" href="#">Foros</a>
+                            <a class="dropdown-item" href="../comentarios.html">Comentarios</a>
+                            <a class="dropdown-item" href="../opiniones.html">Dános tu opinión</a>
+                            <a class="dropdown-item" href="../foros.html">Foros</a>
                         </div>
                     </li>
                     <!-- Fin del menú desplegable "Participa" -->
 
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="industringeniatelas.html">Industringéniatelas</a>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white"
+                            href="../industringeniatelas.html">Industringéniatelas</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="#">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Header-->
-    <header class="masthead" style="background-image: url('assets/img/headerComentario.jpeg')">
-        <div class="container position-relative px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                    <div class="page-heading">
-                        <h1>Comentarios</h1>
-                        <span class="subheading">Cundinamarca: La Comunidad Académica en un Solo Lugar</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- Descripción de la Sección de Comentarios -->
-    <section class="py-4">
-        <div class="container px-4 px-lg-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="text-center">
-                        <h2 class="section-heading">¡Comparte tu opinión!</h2>
-                        <p class="section-subheading text-muted">
-                            En la Universidad de Cundinamarca, valoramos tu voz. Esta es tu oportunidad de expresarte,
-                            compartir tus pensamientos y conectarte con otros miembros de nuestra comunidad.
-                            ¡Únete a la conversación y haz que tu voz sea escuchada!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Contenido -->
+    <div class="container py-5">
+        <h2>Gestión de recursos humanos en la industria</h2>
+        <p>La gestión de recursos humanos en la industria es esencial para garantizar que las organizaciones cuenten con
+            el personal adecuado, con las habilidades y competencias necesarias, para cumplir con los objetivos
+            operativos y estratégicos. Esta función implica una variedad de actividades destinadas a reclutar,
+            desarrollar, retener y gestionar a los empleados en el entorno industrial. Estos se clasifican de la
+            siguiente manera:</p>
 
-    </section>
+        <img class="mb-3 py-3" src="../assets/img/articulos/articulo8/img81.png" alt="Imagen"
+            style="display: block; margin: 0 auto;" width="70%" height="70%">
 
-    <!-- Línea divisora -->
-    <div class="container">
-        <hr class="my-3">
-    </div>
-
-
-
-    <!-- Contenedor de Comentarios de Facebook -->
-    <div id="fb-root"></div>
-    <div class="container text-center py-2">
-        <div class="row justify-content-center">
-            <div class="col-lg-9">
-                <div class="fb-comments" data-href="https://w9lb25sl-5500.use2.devtunnels.ms/dist/comentarios.html"
-                    data-width="100%" data-numposts="5" data-colorscheme="dark">
-                </div>
-            </div>
-        </div>
+        <p>La gestión de recursos humanos en la industria implica equilibrar las necesidades de la organización con el
+            bienestar y el desarrollo de los empleados. Un enfoque estratégico en la gestión de talento contribuye
+            significativamente al éxito a largo plazo de una empresa, asegurando que se cuente con una fuerza laboral
+            calificada y comprometida que esté preparada para enfrentar los desafíos y aprovechar las oportunidades en
+            un entorno industrial en constante evolución.</p>
     </div>
 
     <!-- Footer-->
@@ -177,12 +151,8 @@
     </footer>
 
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-
+    <script src="../js/scripts.js"></script>
 </body>
-
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v17.0"
-    nonce="SOsPpC1j">
-    </script>
