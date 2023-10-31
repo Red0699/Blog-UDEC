@@ -17,9 +17,7 @@
         href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
         rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="css/industringeniatelas.css" type="text/css">
+    <link href="../css/styles.css" rel="stylesheet" />
 
 </head>
 
@@ -29,7 +27,7 @@
     <nav class="navbar navbar-expand-lg navbar-light position-relative" id="mainNav" style="background-color: #007b3e;">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="https://www.udec.edu.co/">
-                <img src="./assets/img/LogoBlanco.png" alt="Logo UDEC" width="130" height="60">
+                <img src="../assets/img/LogoBlanco.png" alt="Logo UDEC" width="130" height="60">
             </a>
             <!-- Botón de despliegue para el responsive -->
             <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
@@ -42,13 +40,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white"
-                            href="index.html">Inicio</a>
+                            href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white"
-                            href="noticias.html">Noticias</a>
+                            href="../noticias.html">Noticias</a>
                     </li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white"
-                            href="#">Investigaciones</a>
+                            href="../investigaciones.html">Investigaciones</a>
                     </li>
 
                     <!-- Item menú desplegable "Participa" -->
@@ -59,15 +57,15 @@
                             Participa
                         </a>
                         <div class="dropdown-menu" aria-labelledby="participarDropdown">
-                            <a class="dropdown-item" href="comentarios.html">Comentarios</a>
-                            <a class="dropdown-item" href="opiniones.html">Dános tu opinión</a>
-                            <a class="dropdown-item" href="foros.html">Foros</a>
+                            <a class="dropdown-item" href="../comentarios.html">Comentarios</a>
+                            <a class="dropdown-item" href="../opiniones.html">Dános tu opinión</a>
+                            <a class="dropdown-item" href="../foros.html">Foros</a>
                         </div>
                     </li>
                     <!-- Fin del menú desplegable "Participa" -->
 
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white"
-                            href="industringeniatelas.html">Industringéniatelas</a>
+                            href="../industringeniatelas.html">Industringéniatelas</a>
                     </li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="#">Contacto</a></li>
                 </ul>
@@ -77,26 +75,84 @@
 
     <!-- Contenido -->
     <div class="container py-5">
+        <h1 class="text-center">Análisis de datos y estadísticas en la industria</h1>
+        <p>El análisis de datos y las estadísticas desempeñan un papel crucial en la industria moderna al proporcionar
+            información valiosa para la toma de decisiones informadas y la mejora continua. Se estructuran de la
+            siguiente manera:</p>
+        <h2>Recopilación de datos</h2>
+        <ul>
+            <li>Sensores y dispositivos IoT: Las máquinas y equipos industriales están equipados con sensores que
+                recopilan datos en tiempo real, permitiendo el monitoreo continuo del rendimiento y la calidad del
+                producto.</li>
+            <li>Sistemas de gestión: Utilizan sistemas informáticos para recopilar datos sobre operaciones, inventario,
+                ventas y otros aspectos del negocio.</li>
+        </ul>
 
-        <h1>Artículos</h1>
+        <h2>Análisis de datos</h2>
+        <ul>
+            <li>Descriptivo: Describe y resume los datos para proporcionar una comprensión básica, utilizando técnicas
+                como gráficos, tablas y resumen de medidas como la media y la desviación estándar.</li>
+            <li>Inferencial: Utiliza técnicas para hacer inferencias y predecir tendencias basadas en una muestra de
+                datos, como pruebas de hipótesis y regresiones.</li>
+            <li>Análisis predictivo: Aplicación de modelos y algoritmos para predecir eventos futuros o tendencias, como
+                la demanda del mercado o el mantenimiento preventivo de equipos.</li>
+        </ul>
 
-        <div class="row">
-            <div class="col-md-6">
-                <div class="input-group mb-3">
-                    <input type="text" id="search-input" class="form-control" placeholder="Buscar por título">
-                    <button class="btn btn-primary" id="search-button">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
+        <h2>Aplicaciones en la industria</h2>
+        <ul>
+            <li>Optimización de la producción: Analiza datos para identificar cuellos de botella, mejorar el rendimiento
+                de la maquinaria y reducir el tiempo de inactividad.</li>
+            <li>Gestión de la cadena de suministro: Utiliza datos para predecir la demanda, gestionar inventarios y
+                mejorar la eficiencia en la distribución.</li>
+            <li>Control de calidad: Analiza datos para identificar defectos, mejorar procesos y garantizar la calidad
+                del producto.</li>
+            <li>Mantenimiento predictivo: Utiliza datos de sensores para predecir fallos en maquinaria, permitiendo el
+                mantenimiento antes de que ocurran problemas graves.</li>
+            <li>Análisis de costos: Examina los datos para identificar áreas de gastos innecesarios y mejorar la
+                eficiencia en el uso de los recursos.</li>
+        </ul>
 
-        <div class="row" id="article-list">
-            <!-- Las tarjetas de artículos se generarán aquí con JavaScript -->
-        </div>
+        <h2>Herramientas y tecnologías</h2>
+        <ul>
+            <li>Software de análisis de datos: Herramientas como Excel, Python, R y software específico de análisis de
+                datos industriales facilitan la manipulación y visualización de datos.</li>
+            <li>Big Data y Machine Learning: Herramientas de big data y algoritmos de machine learning permiten analizar
+                grandes volúmenes de datos y descubrir patrones complejos.</li>
+            <li>Dashboards y Business Intelligence: Utiliza herramientas como Tableau y Power BI para crear
+                visualizaciones interactivas que faciliten la comprensión de los datos.</li>
+        </ul>
 
-        <div id="pagination" class="custom-center">
-            <!-- El paginador se agregará aquí -->
+        <h2>Beneficios</h2>
+        <ul>
+            <li>Toma de decisiones informada: Proporciona información precisa y relevante para tomar decisiones
+                empresariales fundamentadas y estratégicas.</li>
+            <li>Eficiencia operativa: Identifica áreas de mejora, optimizando procesos y reduciendo costos operativos.
+            </li>
+            <li>Innovación: Facilita el descubrimiento de oportunidades de innovación y mejora continua en productos y
+                servicios.</li>
+            <li>Competitividad: Las empresas que pueden analizar y utilizar sus datos de manera efectiva tienen una
+                ventaja competitiva en el mercado.</li>
+        </ul>
+
+        <p>El análisis de datos en las estadísticas en la industria es vital para mejorar la eficiencia, la calidad y la
+            competitividad. Las organizaciones que aprovechan el poder de los datos pueden tomar decisiones más
+            inteligentes, optimizar sus operaciones y estar mejor preparadas para enfrentar los desafíos y aprovechar
+            las oportunidades en un mercado en constante cambio.</p>
+
+        <img class="mb-3 py-3" src="../assets/img/articulos/articulo14/img141.png" alt="Imagen"
+            style="display: block; margin: 0 auto;" width="70%" height="70%">
+
+        <!-- Sección de Bibliografía -->
+        <div class="container py-3">
+            <h3>Fuentes</h3>
+            <!-- Línea divisoria -->
+            <hr>
+            <ul>
+                <li style="word-wrap: break-word;">
+                    <a href="https://www.redalyc.org/pdf/2570/257021008005.pdf"
+                        target="_blank">https://www.redalyc.org/pdf/2570/257021008005.pdf</a>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -155,16 +211,12 @@
 
             </div>
         </div>
-        </div>
+
     </footer>
 
     <!-- Bootstrap core JS-->
-    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <script src="./js/contentArticulos.js" type="text/javascript"></script>
-
-    <script src="./js/jquery.twbsPagination.js" type="text/javascript"></script>
-
+    <script src="../js/scripts.js"></script>
 </body>
