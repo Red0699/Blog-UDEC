@@ -21,31 +21,21 @@ const noticias = [
         link: './noticias/noticias3.html'
     },
     {
-        titulo: 'Noticia 4',
-        contenido: 'Breve descripción de la Noticia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elitasasasas.',
-        imagen: 'post-bg.jpg',
-        link: '#'
+        titulo: 'La ingeniería industrial es la clave para el mundo',
+        contenido: 'La ingeniería industrial ofrece oportunidades profesionales variadas y es esencial para mejorar la productividad y eficiencia en diversos sectores. Los ingenieros industriales impulsan la innovación, promueven la sostenibilidad y contribuyen al desarrollo económico y social. Esta carrera es fundamental para una sociedad próspera y eficiente.',
+        imagen: 'notice3.jpg',
+        link: './noticias/noticias4.html'
     },
+    /*
     {
         titulo: 'Noticia 5',
         contenido: 'Breve descripción de la Noticia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elitasasasas.',
         imagen: 'post-sample-image.jpg',
         link: '#'
     },
-    {
-        titulo: 'Noticia 6',
-        contenido: 'Breve descripción de la Noticia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elitasasasas.',
-        imagen: 'about-bg.jpg',
-        link: '#'
-    },
-    {
-        titulo: 'Noticia 7',
-        contenido: 'Breve descripción de la Noticia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elitasasasas.',
-        imagen: 'about-bg.jpg',
-        link: '#'
-    },
+    */
+    
 
-    // Agrega más noticias aquí...
 ];
 
 // Función para crear tarjetas de noticias
